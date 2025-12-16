@@ -1,0 +1,35 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+ruby ">= 3.0.0"
+
+# ===== Core Dependencies =====
+gem "numo-narray", ">= 0.9.0"     # NumPy equivalent
+gem "daru", ">= 0.3.0"            # Pandas equivalent  
+gem "rumale", ">= 0.20.0"         # Scikit-learn equivalent
+gem "cryptography", ">= 1.0.0"    # Encryption
+gem "colorize", ">= 0.8.0"        # Terminal colors
+gem "ruby-dnn", ">= 0.10.0"       # PyTorch equivalent
+
+# ===== Sensor Dependencies =====
+gem "serialport", ">= 1.3.0"      # PySerial equivalent
+gem "ruby-opencv", ">= 0.0.18"    # OpenCV
+gem "ruby-audio", ">= 1.0.0"      # Audio processing
+
+# ===== Helper Dependencies =====
+gem "geocoder", ">= 1.8.0"        # Geopy equivalent
+gem "sqlite3", ">= 1.6.0"         # Database
+gem "sinatra", ">= 3.0.0"         # Flask equivalent
+gem "puma", ">= 6.0.0"            # Gunicorn equivalent
+gem "nmea", ">= 0.1.0"            # GPS NMEA parsing
+gem "bluetooth", ">= 0.1.0"       # Bluetooth support
+gem "rmagick", ">= 5.0.0"         # Image processing
+gem "gruff", ">= 0.8.0"           # Matplotlib equivalent
+gem "mini_magick", ">= 4.0.0"     # Image manipulation
+gem "json", ">= 2.6.0"            # JSON handling
+gem "securerandom", ">= 0.1.0"    # Random generation
+gem "digest", ">= 3.1.0"          # Hashing
+gem "date", ">= 3.2.0"            # Date handling
+gem "concurrent-ruby", ">= 1.2.0" # Threading
+gem "async", ">= 2.0.0"           # Async operations
