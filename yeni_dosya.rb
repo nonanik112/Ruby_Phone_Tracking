@@ -1,1 +1,0 @@
-# Yeni Ruby dosyası
