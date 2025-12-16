@@ -31,6 +31,16 @@ require 'date'
 # 🔧 TEMEL AYARLAR VE GÜVENLİK
 # =============================================================================
 
+
+begin
+  require_relative 'core/ai_license_adapter'
+  ai_adapter = Core::AILicenseAdapter.new
+  ai_adapter.validate_system
+rescue => e
+  puts "⚠️ AI License system initialization failed: #{e.message}".colorize(:yellow)
+  puts "Continuing with mock implementation...".colorize(:yellow)
+end
+
 class SecurityManager
   # Gelişmiş şifreleme ve güvenlik yönetimi
   
