@@ -1,0 +1,50 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Ruby Phone Tracking System - Command Line Interface
+
+# Add the src directory to the load path
+$LOAD_PATH.unshift(File.expand_path('../src', __dir__))
+
+require 'pathname'
+require 'fileutils'
+
+# Create necessary directories
+Pathname.new('data').mkpath
+Pathname.new('reports').mkpath
+Pathname.new('logs').mkpath
+Pathname.new('security').mkpath
+Pathname.new('recordings').mkpath
+
+# Import the main tracking system
+begin
+  require 'tracking'
+rescue LoadError => e
+  puts "❌ Error loading tracking system: #{e.message}".colorize(:red)
+  puts "Make sure you have all required gems installed:".colorize(:yellow)
+  puts "  bundle install".colorize(:cyan)
+  exit 1
+end
+
+# Handle interrupts gracefully
+trap('INT') do
+  puts "\n\n🛑 Interrupted by user".colorize(:yellow)
+  puts "Shutting down gracefully...".colorize(:cyan)
+  exit 0
+end
+
+# Main entry point
+def main
+  puts "🚀 Starting Ruby Phone Tracking System...".colorize(:green)
+  
+  tracker = AdvancedPhoneTracker.new
+  tracker.main_menu
+  
+rescue => e
+  puts "\n❌ Fatal error: #{e.message}".colorize(:red)
+  puts e.backtrace.join("\n").colorize(:red) if ENV['DEBUG']
+  exit 1
+end
+
+# Run the application
+main if __FILE__ == $0
