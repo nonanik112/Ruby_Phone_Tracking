@@ -33,14 +33,14 @@ This tool **never phones home**.
 
 <img width="700" height="466" alt="Image" src="https://github.com/user-attachments/assets/60734cb1-b2e9-4c49-bf7d-7fb75c1420c5" />
 
-## 🚀 Hızlı Başlangıç
+## 🚀 Hızlı Başlangıç (Ruby – Zero-External-API)
 ```bash
-git clone https://github.com/nonanik112/Phone_Tracking.git
-cd Phone_Tracking
-python3 -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python src/tracking.py
+git clone https://github.com/nonanik112/Ruby_Phone_Tracking.git
+cd Ruby_Phone_Tracking
+# Ruby 3.2+ and bundler required
+bundle install
+./bin/tracking              # Ruby CLI entry point
+# → License oluşur, zero-external-API devreye girer.
 ```
 # Menü → 3 (Demo Modu) ile hemen test et!
 
@@ -74,18 +74,13 @@ BY_MIT – ticari kullanım serbest.
     📊 Auto Report: HTML + PNG, 7-day detailed
 
 🚀 Quick Start
-```
-
-bash
-Copy
-
-git clone https://github.com/nonanik112/Phone_Tracking.git
-cd Phone_Tracking
-python3 -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python src/phone_tracker.py
-# Menu → 3 (Demo Mode) and enjoy!
+```bash
+git clone https://github.com/nonanik112/Ruby_Phone_Tracking.git
+cd Ruby_Phone_Tracking
+# Ruby 3.2+ and bundler required
+bundle install
+./bin/tracking              # ← RUBY CLI
+# → License oluşur, zero-external-API devreye girer.
 
 ```
 🛠️ Requirements
