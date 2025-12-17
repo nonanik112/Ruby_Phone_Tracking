@@ -85,7 +85,7 @@ bundle install
 ```
 🛠️ Requirements
 
-    Python ≥ 3.9
+    Ruby ≥ 3.4.1 + 
     GPS dongle (optional)
     Bluetooth 4.0+ (optional)
     Camera (optional)
