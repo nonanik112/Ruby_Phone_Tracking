@@ -1,6 +1,5 @@
 
 ### 📄 src/config/settings.rb
-```ruby
 # frozen_string_literal: true
 
 module Settings
