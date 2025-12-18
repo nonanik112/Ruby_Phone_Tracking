@@ -1,4 +1,5 @@
 # Ruby Phone Tracking Projesi
+Security-focused data analysis and correlation tooling designed for authorized investigations and risk assessment.
 <!-- ========== TÜRKÇE ========== -->
 # 📡 Gelişmiş Telefon Takip Sistemi (API’siz + AI + Blockchain)
 
